@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.span`
   font-size: 1.6rem;
@@ -22,4 +22,4 @@ export const Container = styled.span`
 
     
     `}
-`;
+`

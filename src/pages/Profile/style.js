@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
@@ -20,7 +20,7 @@ export const Container = styled.div`
 
     font-size: 2.4rem;
   }
-`;
+`
 
 export const Form = styled.form`
   max-width: 34rem;
@@ -29,7 +29,7 @@ export const Form = styled.form`
   div:nth-child(3) {
     margin-bottom: 3rem;
   }
-`;
+`
 
 export const Avatar = styled.div`
   position: relative;
@@ -39,8 +39,11 @@ export const Avatar = styled.div`
   height: 18.6rem;
   > img {
     border-radius: 50%;
+    justify-content: center;
     width: 18.6rem;
     height: 18.6rem;
+
+    object-fit: cover;
   }
   > label {
     width: 4.8rem;
@@ -68,4 +71,4 @@ export const Avatar = styled.div`
       width: 2rem;
     }
   }
-`;
+`

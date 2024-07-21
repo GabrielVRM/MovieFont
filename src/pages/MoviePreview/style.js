@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
@@ -25,6 +25,7 @@ export const Container = styled.div`
     gap: 2rem;
 
     > img {
+      object-fit: cover;
       width: 3rem;
       border-radius: 50%;
     }
@@ -36,4 +37,39 @@ export const Container = styled.div`
     text-align: justify;
     font-weight: 100;
   }
-`;
+
+  .tag {
+    display: flex;
+    margin-left: 1rem;
+    align-items: start;
+    margin-bottom: 3rem;
+
+    border-radius: 1rem;
+  }
+
+  .btn {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 15rem;
+
+    &:hover {
+      transition: 1s;
+      transform: scale(1);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+      }
+
+      70% {
+        transform: scale(1);
+      }
+
+      100% {
+        transform: scale(0.95);
+      }
+    }
+  }
+`

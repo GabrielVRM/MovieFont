@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   height: 16.6rem;
@@ -19,7 +19,9 @@ export const Container = styled.div`
 
   .avatar {
     width: 8rem;
+    height: 8rem;
     border-radius: 50%;
+    object-fit: cover;
   }
 
   div:nth-child(2) {
@@ -122,4 +124,4 @@ export const Container = styled.div`
       }
     }
   }
-`;
+`
