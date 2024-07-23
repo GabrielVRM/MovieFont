@@ -7,6 +7,14 @@ export const Container = styled.div`
 
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
+
+  @media (max-width: 730px) {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 `
 
 export const Form = styled.form`
@@ -39,4 +47,7 @@ export const SingInContent = styled.div`
 export const SingInImage = styled.div`
   background: url(${Sing}) no-repeat center center;
   background-size: cover;
+  @media (max-width: 730px) {
+    display: none;
+  }
 `

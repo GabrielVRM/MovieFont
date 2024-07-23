@@ -99,6 +99,7 @@ export const Container = styled.div`
     .logo {
       width: auto;
       margin: 0;
+      color: ${({ theme }) => theme.COLORS.ROSE};
     }
 
     .avatar {
@@ -123,5 +124,54 @@ export const Container = styled.div`
         color: ${({ theme }) => theme.COLORS.GRAY_400};
       }
     }
+
+ 
+
+  @media (max-width: 480px) {
+    height: 10.6rem;
+  width: 100%;
+
+  padding: 0 rem;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_500};
+    .logo {
+   font-size: 2.5rem;
+    margin: 1rem;
+  }
+
+  .avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover
+    }
+    div:nth-child(3) {
+    width: 30rem;
+    text-align: end;
+    margin-right: 1rem;
+
+    div > a {
+      text-align: end;
+      display: flex;
+
+      justify-content: end;
+      align-items: end;
+      color: ${({ theme }) => theme.COLORS.GRAY_400};
+    }
+    > p {
+      font-size: 1.2rem;
+    }
+
+    > a {
+      font-size: 1.0rem;
+
+      color: ${({ theme }) => theme.COLORS.GRAY_400};
+    }
+  }
   }
 `

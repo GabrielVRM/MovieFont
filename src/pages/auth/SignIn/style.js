@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Sing from "../../../assets/Sing.png";
+import styled from 'styled-components'
+import Sing from '../../../assets/Sing.png'
 
 export const Container = styled.div`
   display: grid;
@@ -7,7 +7,15 @@ export const Container = styled.div`
 
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
-`;
+
+  @media (max-width: 730px) {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+`
 
 export const Form = styled.form`
   > h1 {
@@ -25,7 +33,12 @@ export const Form = styled.form`
   > h2 {
     margin-bottom: 1.6rem;
   }
-`;
+
+  @media (max-width: 730px) {
+    display: flex;
+    flex-direction: column;
+  }
+`
 
 export const SingInContent = styled.div`
   place-content: center;
@@ -34,9 +47,13 @@ export const SingInContent = styled.div`
   > a {
     color: ${({ theme }) => theme.COLORS.ROSE};
   }
-`;
+`
 
 export const SingInImage = styled.div`
   background: url(${Sing}) no-repeat center center;
   background-size: cover;
-`;
+
+  @media (max-width: 730px) {
+    display: none;
+  }
+`

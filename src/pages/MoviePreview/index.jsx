@@ -77,7 +77,7 @@ export function MoviePreview() {
         <Link path={'/'} icon={FaArrowLeft} />
         <div>
           <h1>{data.name}</h1>
-          <div>{stars}</div>
+          <div className='stars'>{stars}</div>
           <div className='tag'>
             <span>{data.tag_name}</span>
           </div>
@@ -91,7 +91,7 @@ export function MoviePreview() {
           </span>
         </div>
         <div>
-          <p>{data.description}</p>
+          <p className='description'>{data.description}</p>
         </div>
         <Button
           className='btn'

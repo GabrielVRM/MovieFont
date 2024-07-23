@@ -16,7 +16,7 @@ export function Header({ setSearch }) {
   return (
     <>
       <Container>
-        <img className='logo' src={RocketImage}></img>
+        <h1 className='logo'> MaximoMovies</h1>
 
         <Input
           placeholder='Pesquisar pelo título'

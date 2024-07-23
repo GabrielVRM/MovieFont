@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.button`
   width: 100%;
@@ -34,4 +34,24 @@ export const Container = styled.button`
   div > a {
     color: ${({ theme }) => theme.COLORS.GRAY_300};
   }
-`;
+
+  &:hover {
+    transition: 1s;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+    }
+
+    70% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(0.95);
+    }
+  }
+`
