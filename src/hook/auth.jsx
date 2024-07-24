@@ -10,6 +10,7 @@ function AuthProvider({ children }) {
 
   async function singIn({ email, password }) {
     try {
+      console.log('URL completa para login:', `${api.defaults.baseURL}/session`)
       const res = await api.post('/session', { email, password })
       const { user, token } = res.data
       localStorage.setItem('token', token)
